@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+      <title>Kaylene England - Physiotherapist</title>
+      <style>
+         body {
+         min-width: 320px;
+         font-family:"Roboto Slab", sans-serif;
+         margin: 0;
+         background-color: #fff;
+         color: #333;
+         }
+         header {
+         background-color: white;
+         text-align: center;
+         padding: 0px;
+         width: 100%;
+         white-space: nowrap;
+         height: 70px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+         position: fixed;
+         top: 0;
+         z-index: 1000;
+         min-width: 330px;
+         }
+         section {
+         max-width: 800px;
+         margin: 5px 5% 20px;
+         padding-top: 5px;
+         padding: 20px;
+         background-color: #fff;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         }
+         h1, h2 {
+         color: #167032;
+         border-bottom: 2px solid #28504C;
+         padding-bottom: 0.5em;
+         }
+         p {
+         line-height: 1.6;
+         color: #555;
+         }
+         p b {
+         color: #167032;
+         }
+         footer {
+         background-color: white;
+         color: #83a871
+         text-align: center;
+         padding: 10px;
+         position: fixed;
+         bottom: 0;
+         width: 100%;
+         }
+         form {
+         margin-top: 20px;
+         }
+         label {
+         display: block;
+         margin-bottom: 8px;
+         color: #4CAF50;
+         }
+         input, textarea {
+         width: 100%;
+         padding: 8px;
+         margin-bottom: 16px;
+         box-sizing: border-box;
+         }
+         .link {
+         text-decoration: solid;
+         }
+         .book-button {
+         background-color: #4CAF50;
+         color: #fff;
+         padding: 10px 20px;
+         font-size: 25px !important;
+         white-space: nowrap;
+         border: none;
+         cursor: pointer;
+         }
+         .container {
+         position: relative;
+         display: inline-block;
+         }
+         .container img {
+         display: block;
+         width: 100%; /* Ensure the image takes the full width of its container */
+         height: auto;
+         }
+         .btn {
+         position: absolute;
+         /* Position the button at 30% from the top and 70% from the left of the image */
+         top: 30%;
+         left: 70%;
+         transform: translate(-50%, -50%);
+         background-color: #7985db;
+         color: white;
+         padding: 15px 20px;
+         font-size: 16px;
+         border: none;
+         cursor: pointer;
+         border-radius: 5px;
+         z-index: 1; /* Ensure the button is above other content */
+         }
+         .btn2 {
+         background-color:white;
+         float: right;
+         color:  #4CAF50;
+         padding: 0px;
+         margin: 25px;
+         font-size: 26px;
+         align-content: center;
+         border: none;
+         cursor: pointer;
+         border-radius: 5px;
+         z-index: 1; /* Ensure the button is above other content */
+         }
+         .content {
+         padding-top: 70px;
+         }
+
+                  .phone {
+         border: none;
+         cursor: pointer;
+         background-color:white;
+                  margin-right: 10px;
+
+         float: right;
+         color:  #4CAF50;
+         padding: 0px;
+         margin-top:25px;
+         margin-left:  10px;
+         font-size: 26px;
+         border: none;
+         border-radius: 5px;
+         position: absolute;
+    right: 102px;
+         }
+
+                           .icon {
+         border: none;
+         cursor: pointer;
+         background-color:white;
+                
+         color:  #4CAF50;
+         padding: 0px;
+        
+         font-size: 26px;
+         border: none;
+         border-radius: 5px;
+padding-right: 10px;
+         }
+
+                           .email {
+         border: none;
+         cursor: pointer;
+         background-color:white;
+         float: right;
+         color:  #4CAF50;
+         padding: 0px;
+         margin-top:25px;
+         margin-left:  10px;
+         margin-right: 10px;
+         font-size: 26px;
+         border: none;
+         border-radius: 5px;
+         position: absolute;
+    right: 65px;
+         }
+
+
+                           .insta {
+         border: none;
+         cursor: pointer;
+         background-color:white;
+                  margin-right: 10px;
+
+         float: right;
+         color:  #4CAF50;
+         padding: 0px;
+         margin-top:25px;
+         margin-left:  10px;
+         font-size: 26px;
+         border: none;
+         border-radius: 5px;
+         position: absolute;
+    right: 130px;
+         }
+
+         .dropbtn {
+         border: none;
+         cursor: pointer;
+         background-color:white;
+         float: right;
+         color:  #4CAF50;
+         padding: 0px;
+         margin: 25px;
+         font-size: 26px;
+         border: none;
+         border-radius: 5px;
+         }
+         .dropdown {
+         position: relative;
+         display: inline-block;
+         float: right;
+         }
+         .dropdown-content {
+         position: relative;
+         display: none;
+         background-color: white;
+         margin: 57px;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 2;
+         }
+         .dropdown-content a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+         }
+         .underlined {
+         border-bottom:.2px solid #4CAF50;
+         }
+         .dropdown-content a:hover {background-color: #4CAF50}
+         .dropdown:hover .dropdown-content {
+         display: block;
+         }
+         .move {
+            padding-top: 70px;
+            margin-top: -70px;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         
+
+         <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-bars"></i></button>
+            <div class="dropdown-content">
+               <a class="underlined" href="https://drive365fitnessandhealth.janeapp.com/#/staff_member/12">Book</a>
+               <a class="underlined" href="#about">About</a>
+               <a class="underlined" href="#services">Services</a>
+               <a class="underlined" href="#billing">Billing</a>
+               <a href="#contact">Contact</a>
+            </div>
+         </div>
+
+         <!-- to add 
+         <i class="fa fa-phone phone" style="font-size:26px"></i>
+         <i class="fa fa-envelope email" style="font-size:26px"></i>
+         <i class="fa fa-instagram insta" style="font-size:26px"></i>
+-->
+         <img style="    margin-right: auto;
+            margin-left: auto; position: absolute; left: 0px;   height: 80%; float: left; padding-left: 8px;
+            padding-top: 8px" src="kfs.png">
+         </div>
+      </header>
+      <div class="content">
+         <container>
+            <a>
+            <img id="image" style="cursor:pointer; max-width: 1000px" onclick="location.href='https://drive365fitnessandhealth.janeapp.com/#/staff_member/12'"src="kbook.png" width="100%">
+            </a>
+         </container>
+         <div class="move" id="about"></div>
+         <section id="about">
+            <h2>MEET KAYLENE</h2>
+            <p>Kaylene finds fulfillment in aiding her patients' fitness, lifestyle, and rehabilitation pursuits. Her approach integrates manual therapy, tailored exercise plans, patient education, and IMS techniques, aiming not only to treat but to empower. </p>
+            <p>Holding degrees in Biology and Physical Therapy from the University of British Columbia, Kaylene values continuous learning, expanding her expertise in various fields like the Mulligan Concept and Dry Needling. Beyond her profession, she enjoys outdoor activities like paddleboarding, biking, and hiking, fueled by her passion for travel, having explored destinations like Machu Picchu and Mount Fuji.</p>
+            <p> Kaylene eagerly anticipates the opportunity to support you in achieving your goals and fostering a healthy lifestyle.</p>
+         </section>
+                  <div class="move" id="services"></div>
+
+         <section id="services">
+            <h2>SERVICES</h2>
+            <p><b> Our services include:</b></p>
+            <ul>
+               <li>Dry needling (AN-IMS1)</li>
+               <li>Exercise Therapy</li>
+               <li>Manual Therapy</li>
+               <li>Modalities (ultrasound & TENS) </li>
+               <li>Taping </li>
+            </ul>
+         </section>
+                  <div class="move" id="billing"></div>
+
+         <section id="billing">
+            <h2>BILLING</h2>
+            <p><b> Prices:</b></p>
+            <div>
+               <span> Initial Assesment</span> <span  style="left: 65%; position:absolute;"> $125 </span>
+            </div>
+            <div>
+               <span> Subsequent Appointment  </span> <span style="left: 65%; position:absolute ;"> $95 </span>
+            </div>
+            <p><b> We do direct billing with the following insurance companies:</b></p>
+            <ul>
+               <li>Manulife</li>
+               <li>Pacific Blue Cross</li>
+               <li>Desjardins Insurance</li>
+               <li>Canada Life </li>
+               <li>Canada Life - PSHCP </li>
+               <li>Equitable Life of Canada  </li>
+            </ul>
+            <img style="
+               display: block; width: 80%;" src="insurance.png">
+         </section>
+                  <div class="move" id="contact"></div>
+
+         <section id="contact">
+            <h2>CONTACT</h2>
+            <p><b>Reach out to Kaylene to schedule an appointment:</b></p>
+            <p><b>Located at:</b> Drive 365 Fitness & Health 
+               15272 Croydon Dr #215, Surrey, BC V3Z 0Z5
+            </p>
+            <p><b><i class="fa fa-phone icon" style="font-size:26px"></i> Phone: </b>  <a class="link" href="tel:6048170147">(604) 817 0147</a></p>
+            <p><i class="fa fa-envelope icon" style="font-size:26px"></i><b>Email: </b> <a class="link" href="mailto:hello@physiokay.com">hello@physiokay.com</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.424897140807!2d-122.8021528239875!3d49.059557586529266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485c4b7015b9983%3A0x118835d6c7ea65b3!2sDrive%20365%20Fitness%20%26%20Health!5e0!3m2!1sen!2sca!4v1707706991185!5m2!1sen!2sca" width="80%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p><b> Parking:</b></p>
+            <img style="
+               display: block; width: 80%;" src="parking.png">
+         </section>
+         <img style="    margin-right: auto;
+            margin-left: auto;
+            display: block; width: 100px;" src="KL.png">
+      </div>
+   </body>
+</html>
