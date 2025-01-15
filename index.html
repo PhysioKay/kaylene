@@ -23,7 +23,7 @@
          width: 100%;
          white-space: nowrap;
          height: 70px;
-         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 2, 1, 0.1);
          position: fixed;
          top: 0;
          z-index: 1000;
@@ -34,7 +34,7 @@
          padding-top: 5px;
          padding: 20px;
          background-color: #fff;
-         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.05), 0 0 10px rgba(0, 0, 0.5, 0.1);
          }
          h1, h2 {
          color: #167032;
@@ -260,13 +260,18 @@ padding-right: 10px;
 -->
          <img style="    margin-right: auto;
             margin-left: auto; position: absolute; left: 0px;   height: 80%; float: left; padding-left: 8px;
-            padding-top: 8px" src="kfs.png">
+            padding-top: 8px;"  src="kfs.png">
          </div>
       </header>
       <div class="content">
          <container>
             <a>
-            <img id="image" style="cursor:pointer;" onclick="location.href='https://drive365fitnessandhealth.janeapp.com/#/staff_member/12'"src="kbook.png" width="100%">
+<picture style="cursor: pointer;" onclick="redirectToLink()">
+   <source media="(min-width: 650px)" srcset="kayweb.png">
+   <source media="(min-width: 465px)" srcset="kbook.png">
+   <img id="image" style="cursor:pointer;" src="kbook.png" width="100%">
+</picture>
+           
             </a>
          </container>
          <div class="move" id="about"></div>
@@ -295,10 +300,10 @@ padding-right: 10px;
             <h2>BILLING</h2>
             <p><b> Prices:</b></p>
             <div>
-               <span> Initial Assessment (60 min)</span> <span  style="left: 65%; position:absolute;"> $125 </span>
+               <span> Initial Assessment (60 min)</span> <span  style="float:right; padding-right: 10%"> $125 </span>
             </div>
             <div>
-               <span> Subsequent Appointment (30 min)  </span> <span style="left: 65%; position:absolute ;"> $95 </span>
+               <span> Subsequent Appointment (30 min)  </span><span  style="float:right; padding-right: 10%"> $95 </span>
             </div>
             <p><b> We do direct billing with the following insurance companies:</b></p>
             <ul>
@@ -332,4 +337,5 @@ padding-right: 10px;
             display: block; width: 100px;" src="KL.png">
       </div>
    </body>
+
 </html>
