@@ -18,7 +18,7 @@
             <button class="dropbtn"><i class="fa fa-bars"></i></button>
             <div class="dropdown-content">
                 <a class="underlined" href="https://drive365fitnessandhealth.janeapp.com/#/staff_member/12">Book</a>
-                <a class="underlined" href="#" onclick="openRegistrationModal()">Register</a>
+                <a class="underlined" href="https://docs.google.com/forms/d/e/1FAIpQLSeDJP8NRyTD5EUmeiZwOCsxhPQL2RRGVMC6NP2_1EqZluFxVg/viewform?usp=header" target="_blank">Register</a>
                 <a class="underlined" href="#about">About</a>
                 <a class="underlined" href="#services">Services</a>
                 <a class="underlined" href="#billing">Billing</a>
@@ -39,15 +39,10 @@
             </a>
         </container>
 
-        <section id="workshop-announcement" style="text-align: center; padding: 40px 20px; background-color: #e8f5e9; border-radius: 8px; margin-top: 20px;">
-            <h2 style="color: #2e7d32; margin-bottom: 15px;">Upcoming Workshop: A Physiotherapy Workshop for Women's Stronger Bone Health</h2>
-            <p style="font-size: 1.1em; margin-bottom: 20px;">Join us on October 18, 2025, from 3pm-4pm at 3033 King George Blvd #26, Surrey, BC V4P 1B8.</p>
-            <button class="btn-primary" onclick="openRegistrationModal()" style="padding: 15px 30px; font-size: 1.2em; border-radius: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer; transition: background-color 0.3s ease;">Register for Workshop</button>
-        </section>
         <div class="move" id="about"></div>
         <section id="about">
             <h2>MEET KAYLENE</h2>
-            <p>Kaylene finds fulfillment in aiding her patients' fitness, lifestyle, and rehabilitation pursuits. Her approach integrates manual therapy, tailored exercise plans, patient education, and IMS techniques, aiming not only to treat but to empower.</p>
+            <p>Kaylene finds fulfillment in aiding her patients\' fitness, lifestyle, and rehabilitation pursuits. Her approach integrates manual therapy, tailored exercise plans, patient education, and IMS techniques, aiming not only to treat but to empower.</p>
             <p>Holding degrees in Biology and Physical Therapy from the University of British Columbia, Kaylene values continuous learning, expanding her expertise in various fields like the Mulligan Concept and Dry Needling. Beyond her profession, she enjoys outdoor activities like paddleboarding, biking, and hiking, fueled by her passion for travel, having explored destinations like Machu Picchu and Mount Fuji.</p>
             <p>Kaylene eagerly anticipates the opportunity to support you in achieving your goals and fostering a healthy lifestyle.</p>
         </section>
@@ -101,169 +96,14 @@
         <img style="margin-right: auto; margin-left: auto; display: block; width: 100px;" src="KL.png">
     </div>
 
-    <!-- Registration Modal -->
-    <div id="registrationModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Physiotherapy Workshop</h2>
-                <p><strong>Title:</strong> A Physiotherapy Workshop for Women's Stronger Bone Health</p>
-                <p><strong>Date:</strong> October 18, 2025</p>
-                <p><strong>Time:</strong> 3pm-4pm</p>
-                <p><strong>Location:</strong> 3033 King George Blvd #26, Surrey, BC V4P 1B8</p>
-                <span class="close" onclick="closeRegistrationModal()">&times;</span>
-            </div>
-            <form id="registrationForm" class="registration-form">
-                <div class="form-section">
-                    <h3>Personal Information</h3>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="firstName">First Name *</label>
-                            <input type="text" id="firstName" name="firstName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name *</label>
-                            <input type="text" id="lastName" name="lastName" required>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="dateOfBirth">Date of Birth *</label>
-                            <input type="date" id="dateOfBirth" name="dateOfBirth" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="gender">Gender</label>
-                            <select id="gender" name="gender">
-                                <option value="">Select Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">Other</option>
-                                <option value="prefer-not-to-say">Prefer not to say</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="form-section">
-                    <h3>Contact Information</h3>
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="emergencyContact">Emergency Contact</label>
-                            <input type="tel" id="emergencyContact" name="emergencyContact">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="address">Address</label>
-                        <textarea id="address" name="address" rows="3"></textarea>
-                    </div>
-                </div>
-
-                <div class="form-section">
-                    <h3>Insurance Information</h3>
-                    <div class="form-group">
-                        <label for="insuranceProvider">Insurance Provider</label>
-                        <select id="insuranceProvider" name="insuranceProvider">
-                            <option value="">Select Insurance Provider</option>
-                            <option value="manulife">Manulife</option>
-                            <option value="pacific-blue-cross">Pacific Blue Cross</option>
-                            <option value="desjardins">Desjardins Insurance</option>
-                            <option value="canada-life">Canada Life</option>
-                            <option value="canada-life-pshcp">Canada Life - PSHCP</option>
-                            <option value="equitable-life">Equitable Life of Canada</option>
-                            <option value="other">Other</option>
-                            <option value="none">No Insurance</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="policyNumber">Policy Number</label>
-                        <input type="text" id="policyNumber" name="policyNumber">
-                    </div>
-                </div>
-
-                <div class="form-section">
-                    <h3>Health Information</h3>
-                    <div class="form-group">
-                        <label for="reasonForVisit">Reason for Visit</label>
-                        <textarea id="reasonForVisit" name="reasonForVisit" rows="3" placeholder="Please describe your symptoms or reason for seeking physiotherapy..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="medicalHistory">Relevant Medical History</label>
-                        <textarea id="medicalHistory" name="medicalHistory" rows="3" placeholder="Please list any relevant medical conditions, surgeries, or medications..."></textarea>
-                    </div>
-                </div>
-
-                <div class="form-section">
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="consent" name="consent" required>
-                            I consent to the collection and use of my personal information for the purpose of providing physiotherapy services *
-                        </label>
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" id="newsletter" name="newsletter">
-                            I would like to receive updates and health tips via email
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-actions">
-                    <button type="button" onclick="closeRegistrationModal()" class="btn-secondary">Cancel</button>
-                    <button type="submit" class="btn-primary">Submit Registration</button>
-                </div>
-            </form>
-        </div>
-    </div>
 
     <script>
         function redirectToLink() {
             window.location.href = "https://drive365fitnessandhealth.janeapp.com/#/staff_member/12";
         }
 
-        function openRegistrationModal() {
-            document.getElementById('registrationModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
 
-        function closeRegistrationModal() {
-            document.getElementById('registrationModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside of it
-        window.onclick = function(event) {
-            const modal = document.getElementById('registrationModal');
-            if (event.target == modal) {
-                closeRegistrationModal();
-            }
-        }
-
-        // Handle form submission
-        document.getElementById('registrationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Collect form data
-            const formData = new FormData(this);
-            const registrationData = {};
-            for (let [key, value] of formData.entries()) {
-                registrationData[key] = value;
-            }
-            
-            // Here you would typically send the data to a server
-            // For now, we'll show a success message
-            alert('Thank you for registering! We will contact you shortly to schedule your appointment.');
-            
-            // Reset form and close modal
-            this.reset();
-            closeRegistrationModal();
-        });
     </script>
 </body>
 </html>
